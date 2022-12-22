@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LUMA</title>
+        <script src="https://kit.fontawesome.com/ebb471ca54.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+<body>
+    <header>
+        <div class="title">
+            <b><a href="./index.html">LUMA</a></b>
+        </div>
+        <div class="navBar">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a class="active" href="./Products.html">OUR PRODUCTS</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./stylesGuide.html">STYLEGUIDE</a></li>
+                    <li>
+                        <p style="margin: 0px;"><i class="fa-sharp fa-solid fa-bag-shopping" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i> 0</p>
+
+                        <div class="offcanvas offcanvas-end" style="background-color: #18181D;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h6 class="offcanvas-title" style="color: white;" id="offcanvasRightLabel">YOUR CART</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div style="padding: 0px;" class="offcanvas-body">
+                                <div style="background-color: #2A2A31; height: 160px; width: 100%; display: grid; grid-template-rows: 0.5fr 1fr;" class="backgroundColor">
+                                    <div style="display: flex; justify-content: center; align-items: flex-end;" class="noItem">
+                                        <p style="color: white; margin: 0px;">NO ITEMS FOUND.</p>
+                                    </div>
+                                    <div style="display: flex; justify-content: center; align-items: center;" class="canvasBtn">
+                                        <button id="blackBTN" style="display: flex; justify-content: flex-start; align-items: center; border-radius: 0px; font-size: 14px; height: 60px; width: 95%; background-color: white; color: black; padding-left: 30%;" type="button">KEEP SHOPPING <img style="padding-left: 5%;" src="https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c5e36521bc5_arrow-dark%402x.svg" alt="error svg"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="products">
+        <section class="oneForProducts">
+            <div class="bgc">
+                <div class="goingCenter">
+                    <div class="firstP" style="color: white;">
+                        <p>BROWSE OUR COLLECTIONS</p>
+                    </div>
+                    <div class="secondP" style="color: white;">
+                        <p>Our Products</p>
+                    </div>
+                    <div class="thirdP" style="color: white;">
+                        <div class="centerP">
+                            <p>Create inspiring, beautifully illuminated rooms. Review our wide selection of stylish contemporary lamps for living room, bedroom, bath and kitchen—and get enlightened about modern design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="twoForProducts">
+            <aside class="asideLeft">
+                <div class="center">
+                    <div class="firstP">
+                        <p>Explore Categories</p>
+                    </div>
+                    <div class="secondP">
+                        <p>Lighting does not just illuminate your home. It actually creates an ambiance and functions like any other piece of decor.</p>
+                    </div>
+                </div>
+            </aside>
+            <aside class="asideRight">
+                <section class="left">
+                    <div style="position: absolute; display: flex; justify-content: center; align-items: center; width: 150px; height: 40px; background-color: white;" class="topTitle">
+                        <p style="margin: 0px; font-size: 12px; font-weight: 400;">WALL + CEILING</p>
+                    </div>
+                    <div class="overlay">
+                        <button id="btn" style="border-radius: 0px; font-size: 14px; height: 60px; width: 243px;" class="btn btn-light btn-lg" type="button">VIEW CATEGORY</button>
+                    </div>
+                </section>
+                <section class="middle">
+                    <div  style="position: absolute; display: flex; justify-content: center; align-items: center; width: 150px; height: 40px; background-color: white;" class="topTitle">
+                        <p style="margin: 0px; font-size: 12px; font-weight: 400;">FLOOR</p>
+                    </div>
+                    <div class="overlay">
+                        <button id="btn" style="border-radius: 0px; font-size: 14px; height: 60px; width: 243px;" class="btn btn-light btn-lg" type="button">VIEW CATEGORY</button>
+                    </div>
+                </section>
+                <section class="right">
+                    <div  style="position: absolute; display: flex; justify-content: center; align-items: center; width: 150px; height: 40px; background-color: white;" class="topTitle">
+                        <p  style="margin: 0px; font-size: 12px; font-weight: 400;">TABLE</p>
+                    </div>
+                    <div class="overlay">
+                        <button id="btn" style="border-radius: 0px; font-size: 14px; height: 60px; width: 243px;" class="btn btn-light btn-lg" type="button">VIEW CATEGORY</button>
+                    </div>
+                </section>
+            </aside>
+        </section>
+        <section class="threeForProducts">
+            <aside class="left">
+                <div class="categories">
+                    <ul>
+                        <span>CATEGORIES</span>
+                        <li><a href="#">All Items</a></li>
+                        <li><a href="#">Wall + Ceiling</a></li>
+                        <li><a href="#">Floor</a></li>
+                        <li><a href="#">Table</a></li>
+                        <p>MOST POPULAR ITEMS</p>
+                        <li><a href="#">Giraffa</a></li>
+                        <li><a href="#">Solis</a></li>
+                        <li><a href="#">Corner Office</a></li>
+                        <li><a href="#">Cielo</a></li>
+                        <li><a href="#">Uma Mini</a></li>
+                        <li><a href="#">Contour</a></li>
+                        <li><a href="#">Circa</a></li>
+                        <li><a href="#">Bola Sphere</a></li>
+                        <li><a href="#">Bola Disc</a></li>
+                        <li><a href="#">Belmont</a></li>
+                        <li><a href="#">Bel Occhio</a></li>
+                        <li><a href="#">Bola Halo</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <aside class="right">
+                <section class="viewProduct">
+                    <div class="imgForProduct1">
+                        <div class="overlay">
+                            <button id="btn" style="border-radius: 0px; font-size: 14px; height: 60px; width: 97%;" class="btn btn-light btn-lg" type="button">VIEW PRODUCT</button>
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <div class="name"><p>Giraffa</p></div>
+                        <div class="price"><p>$ 99.99 USD</p></div>
+                    </div>
+                </section>
+                <section class="viewProduct">
+                    <div class="imgForProduct2">
+                        <div class="overlay">
+                            <button id="btn" style="border-radius: 0px; font-size: 14px; height: 60px; width: 97%;" class="btn btn-light btn-lg" type="button">VIEW PRODUCT</button>
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <div class="name"><p>Solis</p></div>
+                        <div class="price"><p>$ 79.99 USD</p></div>
+                    </div>
+                </section>
+                <section class="viewProduct">
+                    <div class="imgForProduct3">
+                        <div class="overlay">
+                            <button id="btn" style="border-radius: 0px; font-size: 14px; height: 60px; width: 97%;" class="btn btn-light btn-lg" type="button">VIEW PRODUCT</button>
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <div class="name"><p>Corner Office</p></div>
+                        <div class="price"><p>$ 190.00 USD</p></div>
+                    </div>
+                </section>
+                <section class="viewProduct">
+                    <div class="imgForProduct4">
+                        <div class="overlay">
+                            <button id="btn" style="border-radius: 0px; font-size: 14px; height: 60px; width: 97%;" class="btn btn-light btn-lg" type="button">VIEW PRODUCT</button>
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <div class="name"><p>Cielo</p></div>
+                        <div class="price"><p>$ 89.99 USD</p></div>
+                    </div>
+                </section>
+                <section class="viewProduct">
+                    <div style="position: absolute; z-index: 1; display: flex; justify-content: center; align-items: center; width: 150px; height: 40px; background-color: black; color: white" class="topTitle">
+                        <p style="margin: 0px; font-size: 12px; font-weight: 400;">ON SALE</p>
+                    </div>
+                    <div class="imgForProduct5">
+                        <div class="overlay">
+                            <button id="btn" style="border-radius: 0px; font-size: 14px; height: 60px; width: 97%;" class="btn btn-light btn-lg" type="button">VIEW PRODUCT</button>
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <div class="name"><p>Uma Mini</p></div>
+                        <div class="price"><p>$ 155.99 USD</p></div>
+                    </div>
+                </section>
+                <section class="viewProduct">
+                    <div class="imgForProduct6">
+                        <div class="overlay">
+                            <button id="btn" style="border-radius: 0px; font-size: 14px; height: 60px; width: 97%;" class="btn btn-light btn-lg" type="button">VIEW PRODUCT</button>
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <div class="name"><p>Contour</p></div>
+                        <div class="price"><p>$ 245.99 USD</p></div>
+                    </div>
+                </section>
+                <section class="viewProduct">
+                    <div style="position: absolute; z-index: 1; display: flex; justify-content: center; align-items: center; width: 150px; height: 40px; background-color: black; color: white;" class="topTitle">
+                        <p style="margin: 0px; font-size: 12px; font-weight: 400;">ON SALE</p>
+                    </div>
+                    <div class="imgForProduct7">
+                        <div class="overlay">
+                            <button id="btn" style="border-radius: 0px; font-size: 14px; height: 60px; width: 97%;" class="btn btn-light btn-lg" type="button">VIEW PRODUCT</button>
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <div class="name"><p>Circa</p></div>
+                        <div class="price"><p>$ 398.99 USD</p></div>
+                    </div>
+                </section>
+                <section class="viewProduct">
+                    <div class="imgForProduct8">
+                        <div class="overlay">
+                            <button id="btn" style="border-radius: 0px; font-size: 14px; height: 60px; width: 97%;" class="btn btn-light btn-lg" type="button">VIEW PRODUCT</button>
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <div class="name"><p>Bola Sphere</p></div>
+                        <div class="price"><p>$ 789.99 USD</p></div>
+                    </div>
+                </section>
+                <section class="viewProduct">
+                    <div style="position: absolute; z-index: 1; display: flex; justify-content: center; align-items: center; width: 150px; height: 40px; background-color: white;" class="topTitle">
+                        <p style="margin: 0px; font-size: 12px; font-weight: 400;">FEATURED</p>
+                    </div>
+                    <div class="imgForProduct9">
+                        <div class="overlay">
+                            <button id="btn" style="border-radius: 0px; font-size: 14px; height: 60px; width: 97%;" class="btn btn-light btn-lg" type="button">VIEW PRODUCT</button>
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <div class="name">Bola Disc</div>
+                        <div class="price"><p>$ 1,125.99 USD</p></div>
+                    </div>
+                </section>
+                <section class="viewProduct">
+                    <div class="imgForProduct10">
+                        <div class="overlay">
+                            <button id="btn" style="border-radius: 0px; font-size: 14px; height: 60px; width: 97%;" class="btn btn-light btn-lg" type="button">VIEW PRODUCT</button>
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <div class="name"><p>Belmont</p></div>
+                        <div class="price"><p>$ 717.99 USD</p></div>
+                    </div>
+                </section>
+                <section class="viewProduct">
+                    <div class="imgForProduct11">
+                        <div class="overlay">
+                            <button id="btn" style="border-radius: 0px; font-size: 14px; height: 60px; width: 97%;" class="btn btn-light btn-lg" type="button">VIEW PRODUCT</button>
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <div class="name"><p>Bel Occhio</p></div>
+                        <div class="price"><p>$ 515.99 USD</p></div>
+                    </div>
+                </section>
+                <section class="viewProduct">
+                    <div style="position: absolute; z-index: 1; display: flex; justify-content: center; align-items: center; width: 150px; height: 40px; background-color: white;" class="topTitle">
+                        <p style="margin: 0px; font-size: 12px; font-weight: 500;">FEATURED</p>
+                    </div>
+                    <div class="imgForProduct12">
+                        <div class="overlay">
+                            <button id="btn" style="border-radius: 0px; font-size: 14px; height: 60px; width: 97%;" class="btn btn-light btn-lg" type="button">VIEW PRODUCT</button>
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <div class="name"><p>Bola Halo</p></div>
+                        <div class="price"><p>$ 159.99 USD</p></div>
+                    </div>
+                </section>
+            </aside>
+        </section>
+        <section class="fourForProducts">
+            <div class="someText">
+                <div class="goingLeft">
+                    <div class="h2">
+                        <h2>We're Social</h2>
+                    </div>
+                    <div class="p">
+                        Join our community of lamp lovers like you who know the impact great lighting can have on a room.
+                    </div>
+                    <div class="blackButton">
+                        <button id="blackBtn" style="border-radius: 0px; font-size: 14px; height: 60px; width: 237px; background-color: black; color: white;" type="button" class="btn btn-1 btn-width-1">FIND US ON SOCIALS <img src="https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c35a8521bc1_Arrow%402x.svg" alt="error svg"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="empty"></div>
+        </section>
+        <section class="fiveForProducts">
+            <div class="imgLine1">
+                <div class="Overlay"></div>
+            </div>
+            <div class="imgLine2">
+                <div class="Overlay"></div>
+            </div>
+            <div class="imgLine3">
+                <div class="Overlay"></div>
+            </div>
+            <div class="imgLine4">
+                <div class="Overlay"></div>
+            </div>
+            <div class="imgLine5">
+                <div class="Overlay"></div>
+            </div>
+            <div class="imgLine6">
+                <div class="Overlay"></div>
+            </div>
+        </section>
+        <section class="sixForProducts">
+            <div class="shipping1">
+                <div class="centered">
+                    <div class="h6"><h6>Free Shipping</h6></div>
+                    <div class="shippingP"><p>WITHIN USA</p></div>
+                </div>
+            </div>
+            <div class="shipping2">
+                <div class="centered">
+                    <div class="h6"><h6>Easy Returns</h6></div>
+                    <div class="shippingP"><p>WITHIN 7 DAYS</p></div>
+                </div>
+            </div>
+            <div class="shipping3">
+                <div class="centered">
+                    <div class="h6"><h6>1 year Warranty</h6></div>
+                    <div class="shippingP"><p>ON ALL LIGHTS</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="left2">
+            <div class="lists">
+                <ul>
+                    <p>Pages</p>
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">Homepage 2</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">All Products</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="left">
+            <div class="lists">
+                <ul>
+                    <p>Subpages</p>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">About 2</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Contact 2</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="right">
+            <div class="lists">
+                <ul>
+                    <p>Additional</p>
+                    <li><a href="#">Promo Page (Uma)</a></li>
+                    <li><a href="#">Styleguide</a></li>
+                    <li><a href="#">License</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="right2">
+            <div class="lists">
+                <ul>
+                    <p>Social Networks</p>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

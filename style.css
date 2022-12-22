@@ -1,0 +1,2258 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    width: 95%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+header .title b {
+    margin: 0px;
+    font-size: 20px;
+}
+
+header .title b a {
+    text-decoration: none;
+    color: #18181d;
+}
+
+header nav ul {
+    margin: 0px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li i{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #18181d;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0px 10px;
+}
+
+header nav ul li a:hover,
+header .title b a:hover,
+header nav ul li i:hover {
+    color: gray;
+    transition: 0.4s;
+}
+
+.active {
+    color: gray;
+}
+
+.products .oneForProducts {
+    height: 360px;
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c5325521d1f_belmont_essence_1_low_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .oneForProducts .bgc {
+    background-color: rgba(24, 24, 29, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .oneForProducts .bgc .firstP p{
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.products .oneForProducts .bgc .secondP p{
+    font-size: 44px;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.products .oneForProducts .bgc .thirdP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .oneForProducts .bgc .thirdP .centerP {
+    width: 40%;
+}
+
+.products .oneForProducts .bgc .thirdP p{
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.products .twoForProducts {
+    height: 660px;
+    padding: 100px 36px;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    column-gap: 30px;
+}
+
+.products .twoForProducts .asideLeft {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.products .twoForProducts .asideLeft .center {
+    width: 68%;
+    padding-right: 40px;
+}
+
+.products .twoForProducts .asideLeft .center .firstP p{
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 1.2em;
+    color: #18181d;
+}
+
+.products .twoForProducts .asideLeft .center .secondP p {
+    font-size: 16px;
+    color: #18181d;
+    opacity: 0.7;
+}
+
+.products .twoForProducts .asideRight {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 35px;
+}
+
+.products .twoForProducts .asideRight .left{
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c6879521dcb_bola-halo-pendant-chandelier-environmental-hallway-lowres_download.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .twoForProducts .asideRight .middle {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6cb7d7521dbc_bel-occhio-chandelier_r3_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .twoForProducts .asideRight .right {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5dac95ee06d07719cfe37f1a_070-Cielo_SatinAluminumEnv_300.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .twoForProducts .asideRight .left,
+.products .twoForProducts .asideRight .middle,
+.products .twoForProducts .asideRight .right {
+    position: relative;
+}
+  
+.products .twoForProducts .asideRight .left .overlay,
+.products .twoForProducts .asideRight .middle .overlay,
+.products .twoForProducts .asideRight .right .overlay {
+    position: absolute; 
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    transition: .3s ease;
+    opacity:0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.products .twoForProducts .asideRight .left:hover .overlay,
+.products .twoForProducts .asideRight .middle:hover .overlay,
+.products .twoForProducts .asideRight .right:hover .overlay {
+    opacity: 1;
+}
+
+#btn:hover {
+    background-color: white;
+}
+
+.products .threeForProducts {
+    height: 3700px;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    padding: 0px 36px;
+    column-gap: 30px;
+}
+
+.products .threeForProducts .viewProduct {
+    width: 100%;
+    height: 100%;
+}
+
+.products .threeForProducts .right {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 35px;
+    row-gap: 35px;
+}
+
+.products .threeForProducts .right .imgForProduct1 {
+    width: 100%;
+    height: 100%;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c8c24521e02_5d960fc6f8b06d476fdd2fb1_020-Giraffa_Black_Enviro2_300.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .threeForProducts .right .imgForProduct2 {
+    width: 100%;
+    height: 100%;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c4874521e00_5d961261cfbd823d88adcdf3_solis_fs_bedroom_72_300.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .threeForProducts .right .imgForProduct3 {
+    width: 100%;
+    height: 100%;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c05f2521e01_5d960da7f8b06d8045dcf5db_Corner-Office-15-window_300.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .threeForProducts .right .imgForProduct4 {
+    width: 100%;
+    height: 100%;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c8066521e03_5d96078349df2de0f4aefe3b_080-CieloChandelier_300.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .threeForProducts .right .imgForProduct5 {
+    width: 100%;
+    height: 100%;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c6e17521e16_uma-mini-hero-02-off-updated-grill_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .threeForProducts .right .imgForProduct6 {
+    width: 100%;
+    height: 100%;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c8419521de5_contourenviro1_300_download-alt.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .threeForProducts .right .imgForProduct7 {
+    width: 100%;
+    height: 100%;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c0714521dcf_circa-chandelier_hires_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .threeForProducts .right .imgForProduct8 {
+    width: 100%;
+    height: 100%;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c1af3521dea_bola-pendant-chandelier-environmental-stairway-3k_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .threeForProducts .right .imgForProduct9 {
+    width: 100%;
+    height: 100%;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6ca116521dc7_bola-disc-flush-2-rose-gold-in-room-high_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .threeForProducts .right .imgForProduct10 {
+    width: 100%;
+    height: 100%;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c3704521dc6_belmont-22in-group-environment-high_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .threeForProducts .right .imgForProduct11 {
+    width: 100%;
+    height: 100%;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6cb7d7521dbc_bel-occhio-chandelier_r3_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .threeForProducts .right .imgForProduct12 {
+    width: 100%;
+    height: 100%;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6ce825521dc0_bola-halo-pendant-chandelier-environmental-blinding-light-3k_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .threeForProducts .right .imgForProduct1,
+.products .threeForProducts .right .imgForProduct2,
+.products .threeForProducts .right .imgForProduct3,
+.products .threeForProducts .right .imgForProduct4,
+.products .threeForProducts .right .imgForProduct5,
+.products .threeForProducts .right .imgForProduct6,
+.products .threeForProducts .right .imgForProduct7,
+.products .threeForProducts .right .imgForProduct8,
+.products .threeForProducts .right .imgForProduct9,
+.products .threeForProducts .right .imgForProduct10,
+.products .threeForProducts .right .imgForProduct11,
+.products .threeForProducts .right .imgForProduct12 {
+    position: relative;
+    height: 480px;
+}
+
+.products .threeForProducts .right .imgForProduct1 .overlay,
+.products .threeForProducts .right .imgForProduct2 .overlay,
+.products .threeForProducts .right .imgForProduct3 .overlay,
+.products .threeForProducts .right .imgForProduct4 .overlay,
+.products .threeForProducts .right .imgForProduct5 .overlay,
+.products .threeForProducts .right .imgForProduct6 .overlay,
+.products .threeForProducts .right .imgForProduct7 .overlay,
+.products .threeForProducts .right .imgForProduct8 .overlay,
+.products .threeForProducts .right .imgForProduct9 .overlay,
+.products .threeForProducts .right .imgForProduct10 .overlay,
+.products .threeForProducts .right .imgForProduct11 .overlay,
+.products .threeForProducts .right .imgForProduct12 .overlay {
+    position: absolute; 
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    transition: .3s ease;
+    opacity:0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.products .threeForProducts .right .imgForProduct1:hover .overlay,
+.products .threeForProducts .right .imgForProduct2:hover .overlay,
+.products .threeForProducts .right .imgForProduct3:hover .overlay,
+.products .threeForProducts .right .imgForProduct4:hover .overlay,
+.products .threeForProducts .right .imgForProduct5:hover .overlay,
+.products .threeForProducts .right .imgForProduct6:hover .overlay,
+.products .threeForProducts .right .imgForProduct7:hover .overlay,
+.products .threeForProducts .right .imgForProduct8:hover .overlay,
+.products .threeForProducts .right .imgForProduct9:hover .overlay,
+.products .threeForProducts .right .imgForProduct10:hover .overlay,
+.products .threeForProducts .right .imgForProduct11:hover .overlay,
+.products .threeForProducts .right .imgForProduct12:hover .overlay {
+    opacity: 1;
+}
+
+.products .threeForProducts .right .txt .name p {
+    font-size: 16px;
+    color: #18181d;
+    font-weight: 400;
+    margin: 10px 0px;
+    margin-top: 15px;
+}
+
+.products .threeForProducts .right .txt .price p {
+    font-size: 24px;
+    color: #18181d;
+    font-weight: 300;
+    margin: 10px 0px;
+}
+
+.products .threeForProducts .left{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.products .threeForProducts .left .categories {
+    width: 68%;
+    padding-right: 40px;
+}
+
+.products .threeForProducts .left .categories ul {
+    padding: 0px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+}
+
+.products .threeForProducts .left .categories ul li{
+    font-size: 14px;
+    display: block;
+    line-height: 2.5em;
+}
+
+.products .threeForProducts .left .categories ul li a{
+    text-decoration: none;
+    color: #18181d;
+    opacity: 0.9;
+}
+
+.products .threeForProducts .left .categories ul p {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+#blackBTN:hover {
+    background-color: #272731;
+}
+
+#blackBTN:hover img {
+    margin-left: 15px;
+    transition: 0.5s;
+}
+
+#Left3button:hover {
+    background-color: #272731;
+}
+
+#Left3button:hover img {
+    padding-left: 10px;
+    transition: 0.4s;
+}
+
+.products .fourForProducts {
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 0px 36px;
+    margin-top: 50px;
+}
+
+.products .fourForProducts .someText {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.products .fourForProducts .someText .goingLeft {
+    width: 453px;
+}
+
+.products .fourForProducts .someText .goingLeft .p{
+    margin: 50px 0px;
+}
+
+.products .fiveForProducts {
+    height: 255px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.products .fiveForProducts .imgLine1 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c66f7521cef_bola-halo-pendant-chandelier-environmental-hallway-lowres_download.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .fiveForProducts .imgLine2 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6ca2ba521d0c_circatable_env_72_download_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .fiveForProducts .imgLine3 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c6253521cf9_bel-occhio-chandelier_r3_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .fiveForProducts .imgLine4 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c5012521cf0_bel_occhio_whiteblackback_72_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .fiveForProducts .imgLine5 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6ce60d521cdb_bola-halo-pendant-chandelier-environmental-office-wall-3k_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .fiveForProducts .imgLine6 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6ca267521ced_bola-bedroom-ft-v2_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.products .fiveForProducts .imgLine1,
+.products .fiveForProducts .imgLine2,
+.products .fiveForProducts .imgLine3,
+.products .fiveForProducts .imgLine4,
+.products .fiveForProducts .imgLine5,
+.products .fiveForProducts .imgLine6 {
+    position: relative;
+}
+
+.products .fiveForProducts .imgLine1 .Overlay,
+.products .fiveForProducts .imgLine2 .Overlay,
+.products .fiveForProducts .imgLine3 .Overlay,
+.products .fiveForProducts .imgLine4 .Overlay,
+.products .fiveForProducts .imgLine5 .Overlay,
+.products .fiveForProducts .imgLine6 .Overlay {
+    position: absolute; 
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    transition: .3s ease;
+    opacity:0;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.products .fiveForProducts .imgLine1:hover .Overlay,
+.products .fiveForProducts .imgLine2:hover .Overlay,
+.products .fiveForProducts .imgLine3:hover .Overlay,
+.products .fiveForProducts .imgLine4:hover .Overlay,
+.products .fiveForProducts .imgLine5:hover .Overlay,
+.products .fiveForProducts .imgLine6:hover .Overlay {
+    opacity: 1;
+}
+
+.products .sixForProducts {
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.products .sixForProducts .shipping1,
+.products .sixForProducts .shipping2,
+.products .sixForProducts .shipping3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .left2,
+footer .left,
+footer .right,
+footer .right2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left2 ul ,
+footer .left ul ,
+footer .right ul ,
+footer .right2 ul {
+    padding: 0px;
+}
+
+footer .left2 ul li,
+footer .left ul li,
+footer .right ul li,
+footer .right2 ul li {
+    display: block;
+}
+
+footer .left2 ul li a,
+footer .left ul li a,
+footer .right ul li a,
+footer .right2 ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #18181d;
+    opacity: 0.8;
+}
+
+.about {
+    width: 78%;
+    margin: auto;
+}
+
+.about .aboutSection2 .section2img1 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c91bd521ce7_belmont-22in-group-environment-high_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .aboutSection2 .section2img2 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6ca267521ced_bola-bedroom-ft-v2_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .aboutSection2 .section2img3 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c4104521cee_circafloor_pedestal_env_72_download_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .aboutSection3 .Section3Right .Right3P p{
+    font-size: 16px;
+    color: #18181d;
+    opacity: 0.7;
+    margin: 30px 0px;
+}
+
+.about .aboutSection4 .Section4bottom .human1 .profileIMG1 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c71b6521cfb_Avatar%201.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .aboutSection4 .Section4bottom .human2 .profileIMG2 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c9ced521cf3_Avatar%202.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .aboutSection4 .Section4bottom .human3 .profileIMG3 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c6998521cf2_Avatar%203.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .aboutSection4 .Section4bottom .human4 .profileIMG4 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c6a4f521d18_Avatar%204.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .aboutSection4 .Section4bottom .human5 .profileIMG5 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6cf21b521cfc_Avatar%205.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .aboutSection4 .Section4bottom .human6 .profileIMG6 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c68ea521cf8_Avatar%206.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .aboutSection4 .Section4bottom .human7 .profileIMG7 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c5b7c521cf4_Avatar%207.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .aboutSection4 .Section4bottom .human8 .profileIMG8 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c852d521d16_Avatar%208.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .aboutSection4 .Section4bottom .samePDiv .sameP,
+.about .aboutSection4 .Section4Top .samePDiv .sameP {
+    font-size: 12px;
+    line-height: 20px;
+    color: #18181d;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.about .aboutSection4 .Section4Top .meetOurTeem p{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 300;
+    text-transform: none;
+
+}
+
+.about .aboutSection4 .Section4bottom .human1 .sameSecondPDiv p,
+.about .aboutSection4 .Section4bottom .human2 .sameSecondPDiv p,
+.about .aboutSection4 .Section4bottom .human3 .sameSecondPDiv p,
+.about .aboutSection4 .Section4bottom .human4 .sameSecondPDiv p,
+.about .aboutSection4 .Section4bottom .human5 .sameSecondPDiv p,
+.about .aboutSection4 .Section4bottom .human6 .sameSecondPDiv p,
+.about .aboutSection4 .Section4bottom .human7 .sameSecondPDiv p,
+.about .aboutSection4 .Section4bottom .human8 .sameSecondPDiv p {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #18181d;
+}
+
+.about .aboutSection4 .Section4bottom .human1 .bottomTEXT .sameBottomTxt,
+.about .aboutSection4 .Section4bottom .human2 .bottomTEXT .sameBottomTxt,
+.about .aboutSection4 .Section4bottom .human3 .bottomTEXT .sameBottomTxt,
+.about .aboutSection4 .Section4bottom .human4 .bottomTEXT .sameBottomTxt,
+.about .aboutSection4 .Section4bottom .human5 .bottomTEXT .sameBottomTxt,
+.about .aboutSection4 .Section4bottom .human6 .bottomTEXT .sameBottomTxt,
+.about .aboutSection4 .Section4bottom .human7 .bottomTEXT .sameBottomTxt,
+.about .aboutSection4 .Section4bottom .human8 .bottomTEXT .sameBottomTxt {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #18181d;
+    opacity: 0.7;
+}
+
+.about .aboutSection5 .textOnImage .underTextImage .relativeImg {
+    width: 376px;
+    height: 360px;
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c6253521cf9_bel-occhio-chandelier_r3_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#deco-dot {
+    width: 12px;
+    height: 6px;
+    margin-bottom: 5px;
+    margin-right: 30px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    background-color: #af9387;
+    display: inline-block;
+}
+
+#squareIconAside {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+}
+
+
+.main-header {
+    font-size: 80px;
+    font-weight: 300;
+    color: white;
+}
+
+.lg-options .lightning-options {
+    background-image: url(https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c58e3521d0f_contourenviro1_300_download.jpg);
+    min-height: 750px;
+    background-position: 50% 40%, 0px 0px;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightning-options .container .button-grid .fall-collection {
+    display: flex;
+    justify-content: center;
+    border-radius: 0;
+    font-size: 14px;
+    height: 60px;
+    align-items: center;
+}
+
+.button-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.button-grid-2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.button-grid img {
+    margin-left: 15px ;
+}
+
+.button-grid-2 img {
+    margin-left: 15px ;
+}
+
+.btn-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+    margin-top: 2%;
+    border-radius: 0px;
+    width: 321px;
+    height: 60px;
+    font-weight: 500;
+}
+
+.btn-1 img {
+    margin: 1%;
+}
+
+.btn-1, .btn-1 img {
+    padding-left: 20px;
+}
+
+.btn-1:hover img {
+    padding-left: 30px;
+    transition: 0.5s;
+}
+
+.btn-width-2:hover img {
+    padding-left: 15px;
+    transition: 0.7s;
+}
+
+.btn-width-3:hover img {
+    padding-left: 35px;
+    transition: 0.7s;
+}
+
+.btn-width-4:hover img {
+    padding-left: 17px;
+    transition: 0.7s;
+}
+
+.btn-width-7:hover img {
+    padding-left: 13px;
+    transition: 0.7s;
+}
+
+.btn-width-7:hover {
+    background-color: #18181D;
+    color: white;
+}
+
+.btn-width-8:hover img ,.btn-width-9:hover img, .btn-width-11:hover img {
+    padding-left: 13px;
+    transition: 0.7s;
+}
+
+.btn-width-10:hover img {
+    padding-left: 10px;
+    transition: 0.7s;
+}
+
+.btn-width-8:hover,.btn-width-10:hover {
+    background-color: #18181D;
+    color: white;
+}
+
+.btn-width-9:hover {
+    background-color: white;
+    opacity: 1;
+    transition: 0.7s;
+}
+
+.btn-width-11:hover {
+    background-color: white;
+    border: none;
+    transition: 0s;
+}
+
+.btn-width-6:hover img {
+    padding-left: 13px;
+    transition: 0.7s;
+}
+
+.btn-width-6:hover {
+    background-color: #18181D;
+    color: white;
+}
+
+.btn-width-3:hover,.btn-width-4:hover {
+    background-color: #272731;
+    color: #f1f1f1;
+}
+
+.col-sm- img {
+    object-fit:cover;
+}
+
+.row {
+    opacity: 0.3;
+    width: 82%;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.right-light {
+    margin-top: 3%;
+}
+
+.right-light h1 {
+    font-weight: 300;
+    font-size: 34px;
+}
+
+.productsGrid{
+    height: 100%;
+	display: grid;
+    margin: auto;
+	grid-template-columns: 1fr 1fr ;
+    column-gap: 35px;
+}
+
+.view-products-1 {
+    margin-top: 3%;
+}
+
+.background-image-3,.background-image-4,.background-image-5,.background-image-6,.background-image-7,.background-image-8,
+.background-image-9,.background-image-10,.background-image-11,.background-image-12,.background-image-13,.background-image-14,
+.background-image-15,.background-image-16,.background-image-17,.background-image-18 {
+    height: 360px;
+}
+
+.background-image-15,.background-image-16,.background-image-17,.background-image-18 {
+    height: 400px;
+}
+
+.background-image-1 {
+    height: 700px;
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6ca116521dc7_bola-disc-flush-2-rose-gold-in-room-high_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-2 {
+    height: 550px;
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6ce825521dc0_bola-halo-pendant-chandelier-environmental-blinding-light-3k_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-3 {
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c8c24521e02_5d960fc6f8b06d476fdd2fb1_020-Giraffa_Black_Enviro2_300.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-4 {
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c4874521e00_5d961261cfbd823d88adcdf3_solis_fs_bedroom_72_300.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-5 {
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c05f2521e01_5d960da7f8b06d8045dcf5db_Corner-Office-15-window_300.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-6 {
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c8066521e03_5d96078349df2de0f4aefe3b_080-CieloChandelier_300.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-7 {
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c6e17521e16_uma-mini-hero-02-off-updated-grill_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-8 {
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c8419521de5_contourenviro1_300_download-alt.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-9 {
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c0714521dcf_circa-chandelier_hires_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-10 {
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c1af3521dea_bola-pendant-chandelier-environmental-stairway-3k_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-11 {
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6ca116521dc7_bola-disc-flush-2-rose-gold-in-room-high_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-12 {
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c3704521dc6_belmont-22in-group-environment-high_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-13 {
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6cb7d7521dbc_bel-occhio-chandelier_r3_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-14 {
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6ce825521dc0_bola-halo-pendant-chandelier-environmental-blinding-light-3k_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-image-15 {
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c871d521dcc_bola-bedroom-ft-v2_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+}
+
+.background-image-16 {
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c9640521ddd_bola-sphere-pendant-essence-hires_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+}
+
+.background-image-17 {
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6cc7fc521dd3_circafloor_pedestal_env_72_download_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+}
+
+.background-image-18 {
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c4271521df6_bola-halo-pendant-chandelier-environmental-office-wall-3k_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+}
+
+
+.background-image-1,
+.background-image-2,
+.background-image-3,
+.background-image-4,
+.background-image-5,
+.background-image-6,
+.background-image-7,
+.background-image-8,
+.background-image-9,
+.background-image-10,
+.background-image-11,
+.background-image-12,
+.background-image-13,
+.background-image-14,
+.background-image-15,
+.background-image-16,
+.background-image-17,
+.background-image-18
+{
+    position: relative;
+}
+
+.background-image-1 .overlay-1,
+.background-image-2 .overlay-2,
+.background-image-3 .overlay-3,
+.background-image-4 .overlay-4,
+.background-image-5 .overlay-5,
+.background-image-6 .overlay-6,
+.background-image-7 .overlay-7,
+.background-image-8 .overlay-8,
+.background-image-9 .overlay-9,
+.background-image-10 .overlay-10,
+.background-image-11 .overlay-11,
+.background-image-12 .overlay-12,
+.background-image-13 .overlay-13,
+.background-image-14 .overlay-14,
+.background-image-15 .overlay-15,
+.background-image-16 .overlay-16,
+.background-image-17 .overlay-17,
+.background-image-18 .overlay-18{
+    position: absolute; 
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    transition: .3s ease;
+    opacity:0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.background-image-1:hover .overlay-1,
+.background-image-2:hover .overlay-2,
+.background-image-3:hover .overlay-3,
+.background-image-4:hover .overlay-4,
+.background-image-5:hover .overlay-5,
+.background-image-6:hover .overlay-6,
+.background-image-7:hover .overlay-7,
+.background-image-8:hover .overlay-8,
+.background-image-9:hover .overlay-9,
+.background-image-10:hover .overlay-10,
+.background-image-11:hover .overlay-11,
+.background-image-12:hover .overlay-12,
+.background-image-13:hover .overlay-13,
+.background-image-14:hover .overlay-14,
+.background-image-15:hover .overlay-15,
+.background-image-16:hover .overlay-16,
+.background-image-17:hover .overlay-17,
+.background-image-18:hover .overlay-18{
+    opacity: 1;
+}
+
+#btn-1:hover, #btn-2:hover,#btn-3:hover,#btn-4:hover,#btn-5:hover,#btn-6:hover,#btn-7:hover,
+#btn-8:hover,#btn-9:hover,#btn-10:hover,#btn-11:hover,#btn-12:hover,#btn-13:hover,#btn-14:hover {
+    background-color: white;
+}
+
+.meet-belmont h1 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.discover-more p {
+    opacity: 0.7;
+}
+
+.bottom-margin {
+    margin-top: 6%;
+}
+
+.btn-width-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #ebedee;
+    border-radius: 0px;
+    width: 100%;
+    height: 70px;
+    padding: 0px;
+    padding-left: 5%;
+    margin-top: 3%;
+    background-color: white;
+    color: #1f2121;
+    font-weight: 500;
+}
+.btn-width-3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    height: 55px;
+    width: 17%;
+    border: 0px;
+    border-radius: 0px;
+    margin-top: 2%;
+    background-color: #18181d;
+    color: white;
+    font-weight: 500;
+}
+
+.btn-width-3 {
+    padding-left: 40px;
+}
+
+.btn-width-3 img {
+    padding-left: 20px;
+}
+
+.btn-width-4 img {
+    margin-left: 57%;
+}
+
+.btn-width-7 img {
+    margin-left: 13%;
+}
+
+.btn-width-8 img, .btn-width-9 img {
+    margin-left: 36%;
+}
+
+.btn-width-10 img {
+    margin-left: 13%;
+}
+
+.btn-width-11 img {
+    margin-left: 33%;
+}
+
+.btn-width-6 img {
+    margin-left: 40%;
+}
+
+.btn-width-2 img {
+    margin: 0px;
+    margin-left: 54%;
+}
+
+.light-shop {
+    margin-top: 6%;
+}
+
+.light-shop p {
+    opacity: 0.7;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.light-shop h1 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.shop {
+    margin-top: 20px;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 35px;
+    row-gap: 60px;
+}
+
+.outside-image {
+    height: 460px;
+}
+
+.outside-image a, .outside-image h1 {
+    line-height: 60px;
+}
+
+.outside-image a {
+    color: #18181d;
+    text-decoration: none;
+}
+.outside-image h1 {
+    color: #18181d;
+    text-decoration: none;
+    line-height: 0;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.shop-btn-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-decor {
+    margin-top: 6%;
+}
+
+.background-decoration {
+    height: 360px;
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6ce60d521cdb_bola-halo-pendant-chandelier-environmental-office-wall-3k_download.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.on-sale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    background-color: #18181d;
+    height: 40px;
+    font-size: 12px;
+    width: 96px;
+}
+
+.on-sale p {
+    margin: 0;
+}
+
+.featured {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    color: #18181d;
+    background-color: white;
+    height: 40px;
+    font-size: 12px;
+    width: 96px;
+}
+
+.featured p {
+    margin: 0;
+}
+
+.grey-section {
+    margin-top: 6%;
+    background-color: #fafafa;
+    height: 714px;
+    width: 90%;
+}
+
+.grey-div {
+    display: flex;
+    padding-top: 7%;
+    margin-left: 7.7%;
+    height: 714px;
+}
+
+.label-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 42px;
+    border: 1px solid;
+    border-color: rgba(170, 170, 170, 0.2);
+    background-color: white;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.grey-background-img {
+    z-index: 0;
+    position:relative;
+    justify-content: space-evenly;
+    width: 52%;
+    height: 580px;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c94ef521d37_solis_fabric_72_300.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.label-div p {
+    margin: 0px;
+}
+
+.label-h1 h1 {
+    z-index: 1;
+    font-size: 44px;
+    font-weight: 300;
+}
+
+.btn-width-4 {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 3%;
+    align-items: center;
+    position: absolute;
+    border-radius: 0px;
+    border: none;
+    width: 46%;
+    height: 70px;
+    margin-top: 5%;
+    background-color: #18181d;
+    color: white;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.label-01 {
+    margin-top: 6%;
+}
+
+.article-div {
+    line-height: 10px;
+}
+
+.article-div p, .fixtures-p,.fixtures-flex p {
+    margin-top: 6%;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.article-div h1 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+}
+
+.article-grid a {
+    color: #18181d;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.article_news {
+    width: 582px;
+    height: 260px;
+    margin-bottom: 3%;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c871d521dcc_bola-bedroom-ft-v2_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.article_news a {
+    padding-top: 3%;
+}
+
+.article_interview-1 {
+    width: 273px;
+    height: 260px;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c4cf3521de6_lana-mini-livingroom-1-3k_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.article_interview-2 {
+    width: 273px;
+    height: 260px;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c4271521df6_bola-halo-pendant-chandelier-environmental-office-wall-3k_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our-articles .container {
+    margin-top: 3%;
+}
+
+.article-btn {
+    margin-top: 0px;
+    border: 0px;
+    padding: 0px;
+    height: 48px;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+}
+
+.article-btn:hover {
+    background-color: white;
+}
+
+.article-a2,.article-a3 {
+    width: 90%;
+}
+
+.gallery-div {
+    display: flex;
+    align-items: center;
+}
+
+.fixtures-h1 {
+    font-size: 44px;
+    font-weight: 300;
+    margin: 0px;  
+}
+
+.fixtures-p2{
+    width: 45%;
+    margin-top: 2%;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.fixtures-background-img {
+    margin-top: 3%;
+    width: 100%;
+    height: 400px;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c66f7521cef_bola-halo-pendant-chandelier-environmental-hallway-lowres_download.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fixtures-flex {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.fixtures-box-1 h1,.fixtures-box-2 h1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #18181D;
+}
+
+
+.fixtures-box-1,.fixtures-box-2 {
+    width: 50%;
+}
+
+.contact-flex {
+    display: flex;
+    margin-top: 5%;
+    padding: 0px;
+}
+
+.map-div-1 {
+    height: 600px;
+}
+
+.map-div-1,.map-div-2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-div-1 h1 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.map-div-1 p {
+    margin-top: 20px;
+    width: 75%;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.map-div-1 input:hover, .map-div-1 textarea:hover {
+    background-color: #f0f0f0;
+}
+
+.map-input-1 {
+    margin-top: 3%;
+    width: 75%;
+    font-size: 15px;
+    height: 60px;
+    padding: 30px 20px;
+    background: #F5F5F5;
+    border: none;
+}
+
+.map-input-2 {
+    width: 75%;
+    min-height: 170px;
+    padding: 30px 20px;
+    margin-top: 3%;
+    font-size: 15px;
+    background: #F5F5F5;
+    border: none;
+}
+
+.btn-5 {
+    width: 75%;
+    height: 60px;
+    margin-top: 3%;
+    border: 0px;
+    background-color: #18181D;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}
+
+.map-div-2 {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-div-2 iframe {
+    width: 100%;
+    height: 598px;
+}
+
+.sub-footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 5%;
+    padding: 0px;
+}
+
+.dec-dot {
+    margin-top: 9px;
+    width: 12px;
+    height: 6px;
+    background-color: #af9387;
+}
+
+.product-design,.led-technology,.refined-precision,.infinitely-adjustable {
+    width: 22.75%;
+}
+
+.led-technology,.refined-precision,.infinitely-adjustable {
+    width: 100%;
+    opacity: 0.7;
+}
+
+.just-another-p {
+    width: 80%;
+    margin: auto;
+}
+
+.div-for-dot {
+    display: grid;
+    grid-template-columns: 1fr 9.2fr;
+}
+
+.sub-h1 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.featured-post {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.featured-background-img, .featured-text {
+    height: 750px;
+}
+
+.featured-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.featured-p p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0px;
+    height: 35px;
+}
+
+.featured-p {
+    width: 35%;
+    border: 1px solid rgba(170, 170, 170, 0.2);
+}
+
+.featured-h1 h1 {
+    width: 80%;
+    margin-top: 4%;
+    font-size: 44px;
+    font-weight: 300;
+}
+
+.featured-p2 p{
+    width: 80%;
+    margin-top: 4%;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.featured-background-img {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    background-image:url("https://assets.website-files.com/5d9c8fcaca1c6c684c521b94/5d9c8fcaca1c6c871d521dcc_bola-bedroom-ft-v2_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.featured-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    color: #18181d;
+    background-color: white;
+    height: 65px;
+    margin-left: 50%;
+    font-size: 12px;
+    width: 50%;
+}
+
+.btn-width-6, .btn-width-7 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 0px;
+    border: none;
+    width: 100%;
+    height: 65px;
+    padding: 0px;
+    padding-left: 5%;
+    font-size: 14px;
+    background-color: #18181d;
+    color: white;
+    font-weight: 500;
+}
+
+.btn-width-8,.btn-width-9,.btn-width-10,.btn-width-11 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 0px;
+    border: none;
+    width: 50%;
+    height: 70px;
+    padding: 0px;
+    font-size: 14px;
+    background-color: #18181d;
+    color: white;
+    font-weight: 500;
+}
+
+.btn-width-10 {
+    width: 43%;
+    height: 70px;
+    padding-left: 3%;
+}
+
+.btn-width-9,.btn-width-11 {
+    padding-left: 3%;
+    border: 1px solid #ebedee;
+    background-color: white;
+    color: #18181d;
+}
+
+.btn-width-11 {
+    width: 95%;
+    height: 70px;
+    border: none;
+}
+
+.btn-width-7 {
+    padding-left: 10%;
+    height: 57px;
+    width: 45%;
+}
+
+.btn-width-8, .btn-width-9 {
+    padding-left: 2%;
+}
+
+.genious-grid-1 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 4fr 1fr;
+    margin-top: 4%;
+}
+
+.genious-grid-2 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.43fr 0.43fr;
+    margin-top: 3%;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.genious-articles p,.genious-navigation .genious-explore {
+    font-size: 12px;
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+.genious-articles h1 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.genious-store {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 11%;
+}
+
+.genious-summer {
+    font-size: 16px;
+    opacity: 0.7;
+    border-bottom: 1px solid #ebedee;
+    padding-bottom: 7%;
+}
+
+.exp-1 {
+    margin-top: 10%;
+}
+
+.exp-2 {
+    margin-top: 10%;
+}
+
+.genious-navigation ul {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ebedee;
+    padding-bottom: 25px;
+}
+
+.genious-navigation ul a {
+    text-decoration: none;
+    color:#18181D;
+}
+
+.genious-navigation ul:last-of-type {
+    border: none;
+}
+
+.genious-navigation ul:last-of-type {
+    margin-bottom: 80%;
+}
+
+.genious-aside {
+    height: 1611px;
+}
+
+
+.outside-image-2 {
+    height: 740px;
+}
+
+.outside-image-2 a {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 10%;
+    color: #18181d;
+    text-decoration: none;
+}
+.outside-image-2 p {
+    font-size: 16px;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+.outside-image-2 .outside-p1 {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 4%;
+    font-weight: 500;
+}
+
+.outside-image-2 .featured p {
+    font-size: 13px;
+    color: black;
+    font-weight: 500;
+}
+
+.subscribe-div {
+    text-align: center;
+}
+
+.subscribe-div h1, .subscribe-div p {
+    margin: auto;
+    text-align: center;
+    width: 40%;
+}
+
+.subscribe-div p {
+    margin-top: 1%;
+    opacity: 0.7;
+}
+
+.subscribe-div h1 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 10%;
+}
+.map-input-3 {
+    margin-top: 3%;
+    width: 75%;
+    font-size: 15px;
+    height: 60px;
+    margin-right: 20px;
+    padding: 30px 20px;
+    background: #F5F5F5;
+    border: none;
+}
+
+.input-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.style-div {
+    padding: 0px;
+}
+
+.style-body {
+    background-color: #f4f6f6;
+}
+
+.style-div h1 {
+    margin-top: 10%;
+    font-size: 80px;
+    font-weight: 300;
+}
+
+.style-div p {
+    width: 45%;
+    font-size: 16px;
+    opacity: 0.7;
+    margin: 0px;
+    margin-top: 2%;
+}
+
+.colour-div {
+    display: flex;
+    height: 310px;
+    margin-top: 3%;
+    background-color: white;
+    padding: 0px;
+}
+
+.colour-div p {
+
+    font-weight: 500;
+
+}
+
+.colour-white {
+    background-color: #ebedee;
+    margin-left: 8%;
+    margin-right: 2%;
+}
+
+.colour-white h1, .colour-dark h1,.colour-sub-grid-1 h1,.colour-sub-grid-2 h1 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.colour-white p, .colour-dark p, .colour-sub-grid-1 p, .colour-sub-grid-2 p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.colour-dark {
+    background-color: #18181d;
+    color: white;
+    margin-right: 8%;
+    margin-left: 2%;
+}
+
+.colour-white, .colour-dark {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 1.3%;
+    padding-top: 3%;
+    width: 40%;
+    margin-top: 10%;
+    height: 120px;
+}
+
+.colour-grid-1, .colour-grid-2 {
+    height: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+
+.colour-grid-1 {
+    width: 40%;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 8%;
+    margin-right: 2%;
+    padding-bottom: 20px;
+}
+
+.colour-grid-2 {
+    width: 40%;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 8%;
+    margin-left: 2%;
+    padding-bottom: 20px;
+}
+
+.colour-flex {
+    padding: 0px;
+    display: flex;
+    background-color: white;
+}
+
+.colour-sub-grid-1 {
+    background-color: #000000;
+    color: white;
+}
+
+.colour-sub-grid-2{
+    background-color: #af9387;
+    color: white;
+}
+
+.colour-sub-grid-1, .colour-sub-grid-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 8%;
+    padding-top: 10%;
+}
+
+.before-last {
+    background-color: #db4b68;
+}
+
+.colour-grid-2 .last {
+    background-color: #12b878;
+}
+
+.stylesguide-labels {
+    height: 370px;
+    margin-top: 3%;
+    background-color: white;
+    padding: 0px;
+}
+
+.stylesguide-labels p {
+    font-weight: 500;
+}
+
+.label-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.premium-div:first-of-type, .premium-2 {
+    margin-top: 85px !important;
+}
+
+.premium-div {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68%;
+    height: 100px;
+}
+
+.premium-3, .premium-4 {
+    background-color: #18181d;
+}
+
+.premium-2 .featured-p-2 {
+    background-color: #18181d;
+    color: white;
+}
+
+.premium-3 .featured-p-2 {
+    background-color: white;
+}
+
+.premium-4 .featured-p-2 {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.featured-p-2 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0px;
+    height: 35px;
+}
+
+.featured-p-2 {
+    width: 30%;
+    border: 1px solid rgba(170, 170, 170, 0.2);
+}
+
+.buttons-div {
+    height: 460px;
+    background-color: white;
+    margin-top: 3%;
+    padding: 0px;
+}
+
+.buttons-div p {
+    font-weight: 500;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.buttons-grid-btn {
+    margin-top: 72.25px;
+}
+
+.buttons-grid-1, .buttons-grid-2, .buttons-grid-3, .buttons-grid-4 , .buttons-grid-5, .buttons-grid-6 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 95%;
+}
+
+.buttons-grid-4-1 {
+    margin-top: 72.25px;
+    width: 50%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6ca6e2521d2e_grey-transparent.png");
+    background-position: 50% 50%;
+    background-size: 50px;
+}
+
+.buttons-grid-3 {
+    width: 83%;
+}
+
+
+.index .fiveForProducts {
+    height: 255px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.index .fiveForProducts .imgLine1 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c66f7521cef_bola-halo-pendant-chandelier-environmental-hallway-lowres_download.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index .fiveForProducts .imgLine2 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6ca2ba521d0c_circatable_env_72_download_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index .fiveForProducts .imgLine3 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c6253521cf9_bel-occhio-chandelier_r3_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index .fiveForProducts .imgLine4 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c5012521cf0_bel_occhio_whiteblackback_72_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index .fiveForProducts .imgLine5 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6ce60d521cdb_bola-halo-pendant-chandelier-environmental-office-wall-3k_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index .fiveForProducts .imgLine6 {
+    background-image: url("https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6ca267521ced_bola-bedroom-ft-v2_download.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index .fiveForProducts .imgLine1,
+.index .fiveForProducts .imgLine2,
+.index .fiveForProducts .imgLine3,
+.index .fiveForProducts .imgLine4,
+.index .fiveForProducts .imgLine5,
+.index .fiveForProducts .imgLine6 {
+    position: relative;
+}
+
+.index .fiveForProducts .imgLine1 .Overlay,
+.index .fiveForProducts .imgLine2 .Overlay,
+.index .fiveForProducts .imgLine3 .Overlay,
+.index .fiveForProducts .imgLine4 .Overlay,
+.index .fiveForProducts .imgLine5 .Overlay,
+.index .fiveForProducts .imgLine6 .Overlay {
+    position: absolute; 
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    transition: .3s ease;
+    opacity:0;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.index .fiveForProducts .imgLine1:hover .Overlay,
+.index .fiveForProducts .imgLine2:hover .Overlay,
+.index .fiveForProducts .imgLine3:hover .Overlay,
+.index .fiveForProducts .imgLine4:hover .Overlay,
+.index .fiveForProducts .imgLine5:hover .Overlay,
+.index .fiveForProducts .imgLine6:hover .Overlay {
+    opacity: 1;
+}
+
+#bgColorChanger:hover {
+    background-color: white;
+}
+
+.btn-close {
+    background-color: white;
+    opacity: 1;
+}
+
+.btn-close:hover {
+    padding: 9px;
+    background-color: white;
+    opacity: 1;
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LUMA</title>
+        <script src="https://kit.fontawesome.com/ebb471ca54.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+<body>
+    <header>
+        <div class="title">
+            <b><a href="./index.html">LUMA</a></b>
+        </div>
+        <div class="navBar">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./Products.html">OUR PRODUCTS</a></li>
+                    <li><a class="active" href="./about.html">ABOUT</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./stylesGuide.html">STYLEGUIDE</a></li>
+                    <li>
+                        <p style="margin: 0px;"><i class="fa-sharp fa-solid fa-bag-shopping" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i> 0</p>
+
+                        <div class="offcanvas offcanvas-end" style="background-color: #18181D;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h6 class="offcanvas-title" style="color: white;" id="offcanvasRightLabel">YOUR CART</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div style="padding: 0px;" class="offcanvas-body">
+                                <div style="background-color: #2A2A31; height: 160px; width: 100%; display: grid; grid-template-rows: 0.5fr 1fr;" class="backgroundColor">
+                                    <div style="display: flex; justify-content: center; align-items: flex-end;" class="noItem">
+                                        <p style="color: white; margin: 0px;">NO ITEMS FOUND.</p>
+                                    </div>
+                                    <div style="display: flex; justify-content: center; align-items: center;" class="canvasBtn">
+                                        <button id="blackBTN" style="display: flex; justify-content: flex-start; align-items: center; border-radius: 0px; font-size: 14px; height: 60px; width: 95%; background-color: white; color: black; padding-left: 30%;" type="button">KEEP SHOPPING <img style="padding-left: 5%;" src="https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c5e36521bc5_arrow-dark%402x.svg" alt="error svg"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="about">
+        <section style="height: 450px; padding-top: 60px; display: flex; justify-content: center; align-items: center;" class="aboutSection1">
+            <div class="textForAbout">
+                <div style="text-align: center;" class="options">
+                    <p style="font-size: 12px; color: #18181D; opacity: 0.7;">STYLISH MODERN LIGHTING OPTIONS</p>
+                </div>
+                <div style="width: 50%; margin: auto; text-align: center;" class="fixtures">
+                    <p style="font-size: 44px; line-height: 1.1em; margin: 32px 0px; color: #18181D; font-weight: 300;">Thoughtfully curated modern lighting fixtures</p>
+                </div>
+                <div style="width: 50%; margin: auto; text-align: center;" class="modernDesign">
+                    <p style="font-size: 16px; color: #18181D; opacity: 0.7;">Create inspiring, beautifully illuminated rooms. Review our wide selection of stylish contemporary lamps for living room, bedroom, bath and kitchen—and get enlightened about modern design.</p>
+                </div>
+            </div>
+        </section>
+        <section style="height: 460px; display: grid; grid-template-columns: 0.5fr 1fr 0.5fr; column-gap: 20px; padding-bottom: 100px;" class="aboutSection2">
+            <div class="section2img1"></div>
+            <div class="section2img2"></div>
+            <div class="section2img3"></div>
+        </section>
+        <section style="height: 500px; display: grid; grid-template-columns: 1fr 1fr; column-gap: 30px;" class="aboutSection3">
+            <section class="Section3Left">
+                <div class="left3P">
+                    <p style="display: block; margin-bottom: 10px; opacity: 0.7; font-size: 12px; line-height: 20px; font-weight: 500;">LET THERE BE LIGHT</p>
+                </div>
+                <div class="left3SecondP">
+                    <p style="margin-top: 20px; margin-bottom: 25px; font-size: 44px; line-height: 52px; font-weight: 300; white-space: normal; color: #18181D;">Stylish modern lighting options</p>
+                </div>
+                <div style="width: 85%;" class="left3ThirdP">
+                    <p style="font-size: 16px; color: #18181D; opacity: 0.7; margin-bottom: 10px;">The living room is easily the hardest working room in the house, as its entire purpose to serve multiple key functions all in one shared space. The goal is to make everyday living just a little easier, and to make a communal space a little more enticing.</p>
+                </div>
+                <div class="left3Button">
+                    <button id="Left3button" style="display: flex; justify-content: flex-start; align-items: center; border-radius: 0px; font-size: 14px; height: 60px; width: 210px; padding-left: 4.5%; margin-top: 50px;" class="btn btn-dark" type="button">SHOP LIGHTING <img style="margin-left: 15%;" src="https://assets.website-files.com/5d9c8fcaca1c6c013b521b95/5d9c8fcaca1c6c35a8521bc1_Arrow%402x.svg" alt="error svg"></button>
+                </div>
+            </section>
+            <section class="Section3Right">
+                <div class="Right3P">
+                    <p style="margin-top: 0px;">Lighting does not just illuminate your home. It actually creates an ambiance and functions like any other piece of decor. Simply put, the fixture you choose can make or break your space.</p>
+                </div>
+                <div class="Right3P">
+                    <p>Pablo’s designs have been propelled to the forefront of American contemporary lighting by an uncompromising devotion to simplicity and utility. By fusing the highest technical sensibilities with the most appropriate material palette, Pablo is able to create unique, timeless designs with the power to transform any environment.</p>
+                </div>
+                <div class="Right3P">
+                    <p>Looking for a way to make your outdoor and indoor spaces shine this summer? From ceilings draped in LED lights to shimmering outdoor patios, here are eight illuminating ways to dress up your home with lighting.</p>
+                </div>
+                <div class="Right3P">
+                    <p style="margin-bottom: 0px;">If you’ve ever rented or bought a house, you know that lighting can make or break an entire space. From dingy overhead lighting to fluorescent bathroom lights, the wrong lighting can be the difference between a good mood and a bad day.</p>
+                </div>
+            </section>
+        </section>
+        <section style="padding: 100px 0px;" class="aboutSection4">
+            <section class="Section4Top">
+                <div class="samePDiv">
+                    <p class="sameP">PEOPLE BEHIND THE LIGHTS</p>
+                </div>
+                <div class="meetOurTeem">
+                    <p>Meet our team</p>
+                </div>
+            </section>
+            <section style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 36px;" class="Section4bottom">
+                <section class="human1">
+                    <div style="width: 100px; height: 100px; margin-bottom: 26px;" class="profileIMG1"></div>
+                    <div class="samePDiv">
+                        <p class="sameP">DESIGNER</p>
+                    </div>
+                    <div class="sameSecondPDiv">
+                        <p class="sameSecondP">Calvin Holmes</p>
+                    </div>
+                    <div class="bottomTEXT">
+                        <p class="sameBottomTxt">The multidisciplinary designer specializes in furniture for the contract, hospitality and residential markets, as well as lighting, packaging.</p>
+                    </div>
+                </section>
+                <section class="human2">
+                    <div style="width: 100px; height: 100px; margin-bottom: 26px;" class="profileIMG2"></div>
+                    <div class="samePDiv">
+                        <p class="sameP">STORE MANAGER</p>
+                    </div>
+                    <div class="sameSecondPDiv">
+                        <p class="sameSecondP">Ellen Webb</p>
+                    </div>
+                    <div class="bottomTEXT">
+                        <p class="sameBottomTxt">Based in Amsterdam and Milan, Webb’s creative process begins with materiality and an empirical approach that is highly experimental.</p>
+                    </div>
+                </section>
+                <section class="human3">
+                    <div style="width: 100px; height: 100px; margin-bottom: 26px;" class="profileIMG3"></div>
+                    <div class="samePDiv">
+                        <p class="sameP">DESIGNER</p>
+                    </div>
+                    <div class="sameSecondPDiv">
+                        <p class="sameSecondP">Ivan Daniel</p>
+                    </div>
+                    <div class="bottomTEXT">
+                        <p class="sameBottomTxt">Interested in how the pragmatism of the traditional craftsman can create new design, he focuses on simplicity to spur technical innovations.</p>
+                    </div>
+                </section>
+                <section class="human4">
+                    <div style="width: 100px; height: 100px; margin-bottom: 26px;" class="profileIMG4"></div>
+                    <div class="samePDiv">
+                        <p class="sameP">STORE MANAGER</p>
+                    </div>
+                    <div class="sameSecondPDiv">
+                        <p class="sameSecondP">Daisy Bradley</p>
+                    </div>
+                    <div class="bottomTEXT">
+                        <p class="sameBottomTxt">Born in Venezuela, Daisy is a prolific designer with over twenty years of experience creating products for the transportation and consumer electronics.</p>
+                    </div>
+                </section>
+                <section class="human5">
+                    <div style="width: 100px; height: 100px; margin-bottom: 26px;" class="profileIMG5"></div>
+                    <div class="samePDiv">
+                        <p class="sameP">BLOG WRITER</p>
+                    </div>
+                    <div class="sameSecondPDiv">
+                        <p class="sameSecondP">Elmer Walton</p>
+                    </div>
+                    <div class="bottomTEXT">
+                        <p class="sameBottomTxt">Interested in how the pragmatism of the traditional craftsman can create new design, he focuses on simplicity to spur technical innovations.</p>
+                    </div>
+                </section>
+                <section class="human6">
+                    <div style="width: 100px; height: 100px; margin-bottom: 26px;" class="profileIMG6"></div>
+                    <div class="samePDiv">
+                        <p class="sameP">MARKETING</p>
+                    </div>
+                    <div class="sameSecondPDiv">
+                        <p class="sameSecondP">Ronnie Kelly</p>
+                    </div>
+                    <div class="bottomTEXT">
+                        <p class="sameBottomTxt">Born in Portugal, Kelly is a prolific designer with over twenty years of experience creating products for the transportation and consumer electronics.</p>
+                    </div>
+                </section>
+                <section class="human7">
+                    <div style="width: 100px; height: 100px; margin-bottom: 26px;" class="profileIMG7"></div>
+                    <div class="samePDiv">
+                        <p class="sameP">MARKETING</p>
+                    </div>
+                    <div class="sameSecondPDiv">
+                        <p class="sameSecondP">Bettie Walker</p>
+                    </div>
+                    <div class="bottomTEXT">
+                        <p class="sameBottomTxt">The multidisciplinary designer specializes in furniture for the contract, hospitality and residential markets, as well as lighting, packaging.</p>
+                    </div>
+                </section>
+                <section class="human8">
+                    <div style="width: 100px; height: 100px; margin-bottom: 26px;" class="profileIMG8"></div>
+                    <div class="samePDiv">
+                        <p class="sameP">DESIGNER</p>
+                    </div>
+                    <div class="sameSecondPDiv">
+                        <p class="sameSecondP">Francis Cobb</p>
+                    </div>
+                    <div class="bottomTEXT">
+                        <p class="sameBottomTxt">Based in Amsterdam and Milan, Cobb’s creative process begins with materiality and an empirical approach that is highly experimental.</p>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section style="position: relative; height: 568px; display: grid; grid-template-columns: 1.33fr 1fr; padding-top: 40px; padding-bottom: 100px;" class="aboutSection5">
+            <section style="display: flex; justify-content: flex-end;" class="textOnImage">
+                <div style="z-index: 1;position: absolute; " class="divForTextOnImage">
+                    <p style="width: 67%; margin-bottom: 25px; font-size: 44px; line-height: 52px; font-weight: 300;">"Bel Occhio is a study in weightlessness and transparency,” notes designer Pablo Pardo on his inspiration for this luminaire."</p>
+                </div>
+                <div style="display: flex; align-items: flex-end;" class="underTextImage">
+                    <div class="relativeImg"></div>
+                </div>
+            </section>
+            <section style="display: flex; justify-content: flex-end;" class="TextWithSquare">
+                <div style="width: 72%;" class="lastCenteredDiv">
+                    <div id="squareIconAside">
+                        <div class="firstSquare">
+                            <div id="deco-dot"></div>
+                        </div>
+                        <div class="secondSquare">
+                            <p style="color: #18181D; opacity: 0.7; font-size: 12px; line-height: 20px; font-weight: 500;" class="topPElement">TRANSFORMATIVE LIGHT</p>
+                            <p style="font-size: 16px; color: #18181D; margin-bottom: 10px; opacity: 0.7;" class="bottomPElement">Provides both focused and ambient illumination.</p>
+                        </div>
+                    </div>
+                    <div style="padding: 20px 0px;" id="squareIconAside">
+                        <div class="firstSquare">
+                            <div id="deco-dot"></div>
+                        </div>
+                        <div class="secondSquare">
+                            <p style="color: #18181D; opacity: 0.7; font-size: 12px; line-height: 20px; font-weight: 500;" class="topPElement">TWO-IN-ONE</p>
+                            <p style="font-size: 16px; color: #18181D; margin-bottom: 10px; opacity: 0.7;" class="bottomPElement">Designed for pendant and tabletop applications.</p>
+                        </div>
+                    </div>
+                    <div id="squareIconAside">
+                        <div class="firstSquare">
+                            <div id="deco-dot"></div>
+                        </div>
+                        <div class="secondSquare">
+                            <p style="color: #18181D; opacity: 0.7; font-size: 12px; line-height: 20px; font-weight: 500;" class="topPElement">LIGHT ANYWHERE YOU WANT IT</p>
+                            <p style="font-size: 16px; color: #18181D; margin-bottom: 10px; opacity: 0.7;" class="bottomPElement">Infinite adjustment with the touch of a hand.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="left2">
+            <div class="lists">
+                <ul>
+                    <p>Pages</p>
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">Homepage 2</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">All Products</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="left">
+            <div class="lists">
+                <ul>
+                    <p>Subpages</p>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">About 2</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Contact 2</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="right">
+            <div class="lists">
+                <ul>
+                    <p>Additional</p>
+                    <li><a href="#">Promo Page (Uma)</a></li>
+                    <li><a href="#">Styleguide</a></li>
+                    <li><a href="#">License</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="right2">
+            <div class="lists">
+                <ul>
+                    <p>Social Networks</p>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
